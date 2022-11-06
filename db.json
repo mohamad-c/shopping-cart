@@ -1,0 +1,76 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Green Sofa",
+      "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzNzUxOTl8MHwxfGFsbHx8fHx8fHx8fDE2Njc3NTUzMTQ&ixlib=rb-4.0.3&q=80",
+      "price": 289.99,
+      "company": "ikea",
+      "category": "living room",
+      "free-shipping": true
+    },
+    {
+      "id": 2,
+      "title": "Leather Sofa",
+      "image": "https://images.unsplash.com/photo-1540574163026-643ea20ade25?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzNzUxOTl8MHwxfGFsbHx8fHx8fHx8fDE2Njc3NTgzOTY&ixlib=rb-4.0.3&q=80",
+      "price": 539.99,
+      "company": "liddy",
+      "category": "office",
+      "free-shipping": false
+    },
+    {
+      "id": 3,
+      "title": "Unique Lamp",
+      "image": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzNzUxOTl8MHwxfGFsbHx8fHx8fHx8fDE2Njc3NTg0MjE&ixlib=rb-4.0.3&q=80",
+      "price": 159.99,
+      "company": "marcos",
+      "category": "all",
+      "free-shipping": true
+    },
+    {
+      "id": 4,
+      "title": "Black Leather Sofa",
+      "image": "https://images.unsplash.com/photo-1573866926487-a1865558a9cf?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzNzUxOTl8MHwxfGFsbHx8fHx8fHx8fDE2Njc3NTg0NDE&ixlib=rb-4.0.3&q=80",
+      "price": 899.99,
+      "company": "ikea",
+      "category": "all",
+      "free-shipping": false
+    },
+    {
+      "id": 5,
+      "title": "White Chair",
+      "image": "https://images.unsplash.com/photo-1505843490538-5133c6c7d0e1?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzNzUxOTl8MHwxfGFsbHx8fHx8fHx8fDE2Njc3NTg0NTk&ixlib=rb-4.0.3&q=80",
+      "price": 299.99,
+      "company": "caressa",
+      "category": "all",
+      "free-shipping": true
+    },
+    {
+      "id": 6,
+      "title": "Wooden Table",
+      "image": "https://images.unsplash.com/photo-1605239435870-67df4c54a0b3?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzNzUxOTl8MHwxfGFsbHx8fHx8fHx8fDE2Njc3NTg0Nzc&ixlib=rb-4.0.3&q=80",
+      "price": 299.99,
+      "company": "ikea",
+      "category": "living room",
+      "free-shipping": false
+    },
+    {
+      "id": 7,
+      "title": "Computer Desk",
+      "image": "https://images.unsplash.com/photo-1593062096033-9a26b09da705?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzNzUxOTl8MHwxfGFsbHx8fHx8fHx8fDE2Njc3NTg1MDQ&ixlib=rb-4.0.3&q=80",
+      "price": 799.99,
+      "company": "ikea",
+      "category": "bedroom",
+      "free-shipping": false
+    },
+    {
+      "id": 8,
+      "title": "Blue Chair",
+      "image": "https://images.unsplash.com/photo-1634712282287-14ed57b9cc89?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzNzUxOTl8MHwxfGFsbHx8fHx8fHx8fDE2Njc3NTgyMTc&ixlib=rb-4.0.3&q=80",
+      "price": 489.99,
+      "company": "liddy",
+      "category": "all",
+      "free-shipping": true
+    }
+  ]
+}
