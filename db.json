@@ -7,7 +7,7 @@
       "price": 289.99,
       "company": "ikea",
       "category": "living room",
-      "free-shipping": true
+      "freeShipping": true
     },
     {
       "id": 2,
@@ -16,7 +16,7 @@
       "price": 539.99,
       "company": "liddy",
       "category": "office",
-      "free-shipping": false
+      "freeShipping": false
     },
     {
       "id": 3,
@@ -25,7 +25,7 @@
       "price": 159.99,
       "company": "marcos",
       "category": "all",
-      "free-shipping": true
+      "freeShipping": true
     },
     {
       "id": 4,
@@ -34,7 +34,7 @@
       "price": 899.99,
       "company": "ikea",
       "category": "all",
-      "free-shipping": false
+      "freeShipping": false
     },
     {
       "id": 5,
@@ -43,7 +43,7 @@
       "price": 299.99,
       "company": "caressa",
       "category": "all",
-      "free-shipping": true
+      "freeShipping": true
     },
     {
       "id": 6,
@@ -52,7 +52,7 @@
       "price": 299.99,
       "company": "ikea",
       "category": "living room",
-      "free-shipping": false
+      "freeShipping": false
     },
     {
       "id": 7,
@@ -61,7 +61,7 @@
       "price": 799.99,
       "company": "ikea",
       "category": "bedroom",
-      "free-shipping": false
+      "freeShipping": false
     },
     {
       "id": 8,
@@ -70,7 +70,7 @@
       "price": 489.99,
       "company": "liddy",
       "category": "all",
-      "free-shipping": true
+      "freeShipping": true
     }
   ]
 }

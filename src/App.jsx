@@ -1,19 +1,12 @@
-import { useContext } from 'react';
-import './App.css'
-import { ProductContext } from './context/productContext';
+import "./App.css";
+import ProductPage from "./pages/ProductPage";
 
-function App() {  
-  const { data } = useContext(ProductContext);
-  console.log(data);
+function App() {
   return (
     <div className="App">
-      {
-        data?.map((product)=>(
-          <p>{product.title}</p>
-        ))
-      }
+      <ProductPage />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
