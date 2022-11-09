@@ -1,8 +1,13 @@
 import { Image, Card, Text, Group, Button } from "@mantine/core";
+import { useContext } from "react";
+import { ProductContext } from "../../context/productContext";
 
-const ProductCard = ({image, title, price, shipping, brand}) => {
+
+const ProductCard = ({ image, title, price, shipping, brand }) => {
+  const { addProductMutation } = useContext(ProductContext);
+
   return (
-    <Card radius="md" withBorder p="xl" style={{width:"40%"}}>
+    <Card radius="md" withBorder p="xl" style={{ width: "40%" }}>
       <Card.Section>
         <Image src={image} height={150} />
       </Card.Section>
@@ -38,7 +43,21 @@ const ProductCard = ({image, title, price, shipping, brand}) => {
           </Text>
         </div>
 
-        <Button radius="md" variant="filled" color="yellow">Add to cart</Button>
+        <Button
+          radius="md"
+          variant="filled"
+          color="yellow"
+          onClick={() => {
+            addProductMutation.mutate({
+              title: title,
+              price: price,
+              shipping: shipping,
+              brand: brand,
+            })
+          }}
+        >
+          Add to cart
+        </Button>
       </Group>
     </Card>
   );
