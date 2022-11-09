@@ -8,3 +8,7 @@
 .links, .cart{
   width: 260px;
 }
+
+.navbar_header{
+  position: sticky;
+}

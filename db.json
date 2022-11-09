@@ -72,5 +72,56 @@
       "category": "all",
       "freeShipping": true
     }
+  ],
+  "cart": [
+    {
+      "title": "Leather Sofa",
+      "price": 539.99,
+      "shipping": "100$ for shipping",
+      "brand": "liddy",
+      "id": 1
+    },
+    {
+      "title": "Leather Sofa",
+      "price": 539.99,
+      "shipping": "100$ for shipping",
+      "brand": "liddy",
+      "id": 2
+    },
+    {
+      "title": "Leather Sofa",
+      "price": 539.99,
+      "shipping": "100$ for shipping",
+      "brand": "liddy",
+      "id": 3
+    },
+    {
+      "title": "Leather Sofa",
+      "price": 539.99,
+      "shipping": "100$ for shipping",
+      "brand": "liddy",
+      "id": 4
+    },
+    {
+      "title": "Leather Sofa",
+      "price": 539.99,
+      "shipping": "100$ for shipping",
+      "brand": "liddy",
+      "id": 5
+    },
+    {
+      "title": "Leather Sofa",
+      "price": 539.99,
+      "shipping": "100$ for shipping",
+      "brand": "liddy",
+      "id": 6
+    },
+    {
+      "title": "Leather Sofa",
+      "price": 539.99,
+      "shipping": "100$ for shipping",
+      "brand": "liddy",
+      "id": 7
+    }
   ]
 }
