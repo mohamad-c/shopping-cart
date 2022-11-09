@@ -1,6 +1,6 @@
 import React from "react";
 import ProductCard from "../components/Card";
-import { Center, Container, Group, Loader, Stack } from "@mantine/core";
+import { Center, Container, Group, Loader } from "@mantine/core";
 import { useContext } from "react";
 import { ProductContext } from "../context/productContext";
 
@@ -12,7 +12,9 @@ const ProductPage = () => {
         <Center>
           <Group position="center" spacing="xl">
             {isLoading ? (
-              <Loader size="xs" />
+              <Center style={{ width: 400, height: 500 }}>
+                <Loader size="xs" color="#61dbfb" />
+              </Center>
             ) : (
               data?.map((product) => (
                 <ProductCard
