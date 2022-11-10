@@ -4,6 +4,7 @@ import { FaReact } from "react-icons/fa";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import "./style.css";
 import cartItems from "../../../db.json";
+import ProductInCart from "../ProductInCart";
 
 const Navbar = () => {
   return (
@@ -17,17 +18,19 @@ const Navbar = () => {
           <FaReact color="#61dbfb" size={28} />
 
           <Group spacing={0} className="cart" position="right" noWrap>
-            <ActionIcon size="lg">
-              <Indicator
-                size={18}
-                label={String(cartItems.cart.length)}
-                inline
-                showZero={false}
-                dot={false}
-              >
-                <AiOutlineShoppingCart size={20} stroke={1.5} />
-              </Indicator>
-            </ActionIcon>
+            <ProductInCart>
+              <ActionIcon size="lg">
+                <Indicator
+                  size={18}
+                  label={String(cartItems.cart.length)}
+                  inline
+                  showZero={false}
+                  dot={false}
+                >
+                  <AiOutlineShoppingCart size={20} stroke={1.5} />
+                </Indicator>
+              </ActionIcon>
+            </ProductInCart>
           </Group>
         </Container>
       </Header>
