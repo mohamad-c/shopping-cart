@@ -2,7 +2,6 @@ import { Image, Card, Text, Group, Button } from "@mantine/core";
 import { useContext } from "react";
 import { ProductContext } from "../../context/productContext";
 
-
 const ProductCard = ({ image, title, price, shipping, brand }) => {
   const { addProductMutation } = useContext(ProductContext);
 
@@ -53,8 +52,8 @@ const ProductCard = ({ image, title, price, shipping, brand }) => {
               price: price,
               shipping: shipping,
               brand: brand,
-              image: image
-            })
+              image: image,
+            });
           }}
         >
           Add to cart

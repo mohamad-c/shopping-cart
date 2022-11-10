@@ -13,14 +13,22 @@ const ProductInCart = ({ children }) => {
             <HoverCard.Dropdown>
               {cartData.cart?.slice(0, 3).map((product) => (
                 <MemoizedProductCard
-                image={product.image}
-                title={product.title}
+                  key={product.id}
+                  image={product.image}
+                  title={product.title}
                   price={product.price}
+                  id={product.id}
                 />
-                ))}
-                <Divider my="md" size="xs" />
+              ))}
+              <Divider my="md" size="xs" />
               <Center>
-                <Button variant="outline" color="teal" style={{width:"100%"}}>see cart</Button>
+                <Button
+                  variant="outline"
+                  color="teal"
+                  style={{ width: "100%" }}
+                >
+                  see cart
+                </Button>
               </Center>
             </HoverCard.Dropdown>
           </HoverCard>
@@ -37,6 +45,8 @@ const ProductInCart = ({ children }) => {
               <>
                 {cartData.cart?.slice(0, 3).map((product) => (
                   <MemoizedProductCard
+                    key={product.id}
+                    id={product.id}
                     image={product.image}
                     title={product.title}
                     price={product.price}
