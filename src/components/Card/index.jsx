@@ -37,7 +37,7 @@ const ProductCard = ({ image, title, price, shipping, brand }) => {
           <Text size="xl" span weight={500}>
             {price}$
           </Text>
-          <Text span size="sm" color="dimmed">
+          <Text span fz="xs" color="dimmed">
             {" "}
             / {shipping}
           </Text>
@@ -53,6 +53,7 @@ const ProductCard = ({ image, title, price, shipping, brand }) => {
               price: price,
               shipping: shipping,
               brand: brand,
+              image: image
             })
           }}
         >
