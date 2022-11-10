@@ -1,7 +1,16 @@
-import React from "react";
-import { Card, Group, Image, Stack, Text } from "@mantine/core";
+import React, { useContext } from "react";
+import {
+  Card,
+  Group,
+  Image,
+  Stack,
+  Text,
+  CloseButton,
+} from "@mantine/core";
+import { ProductContext } from "../../context/productContext";
 
-const ProductCard = ({ image, title, price }) => {
+const ProductCard = ({ image, title, price, id }) => {
+  const { deleteProductMutation } = useContext(ProductContext);
   return (
     <Card
       withBorder
@@ -14,11 +23,20 @@ const ProductCard = ({ image, title, price }) => {
         <Group>
           <Image src={image} radius="sm" height={70} width={80} />
           <Stack spacing="xs">
-            <Text fw={700} fz="sm">{title}</Text>
+            <Text fw={700} fz="sm">
+              {title}
+            </Text>
             <Text fz="md" c="dimmed">
               {price}$
             </Text>
           </Stack>
+          <CloseButton
+            title="remove prroduct"
+            size="md"
+            iconSize={17}
+            color="red"
+            onClick={() => deleteProductMutation.mutate(id)}
+          />
         </Group>
       </Card.Section>
     </Card>
