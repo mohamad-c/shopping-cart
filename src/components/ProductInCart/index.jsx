@@ -1,5 +1,5 @@
 import React from "react";
-import { HoverCard, Group, Center, Button, Divider } from "@mantine/core";
+import { HoverCard, Group, Center, Button, Divider, Text } from "@mantine/core";
 import cartData from "../../../db.json";
 import { MemoizedProductCard } from "../ProductCard";
 
@@ -54,7 +54,9 @@ const ProductInCart = ({ children }) => {
                 ))}
               </>
             ) : (
-              <p>cart is empty</p>
+              <Center>
+                <Text fw={600}>cart is empty</Text>
+              </Center>
             )}
           </HoverCard.Dropdown>
         </HoverCard>
