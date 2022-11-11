@@ -73,5 +73,22 @@
       "freeShipping": true
     }
   ],
-  "cart": []
+  "cart": [
+    {
+      "title": "Leather Sofa",
+      "price": 539.99,
+      "shipping": "100$ for shipping",
+      "brand": "liddy",
+      "image": "https://images.unsplash.com/photo-1540574163026-643ea20ade25?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzNzUxOTl8MHwxfGFsbHx8fHx8fHx8fDE2Njc3NTgzOTY&ixlib=rb-4.0.3&q=80",
+      "id": 1
+    },
+    {
+      "title": "Green Sofa",
+      "price": 289.99,
+      "shipping": "free shipping",
+      "brand": "ikea",
+      "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzNzUxOTl8MHwxfGFsbHx8fHx8fHx8fDE2Njc3NTUzMTQ&ixlib=rb-4.0.3&q=80",
+      "id": 2
+    }
+  ]
 }

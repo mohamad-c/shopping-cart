@@ -1,9 +1,17 @@
 import React from "react";
-import { HoverCard, Group, Center, Button, Divider } from "@mantine/core";
+import { HoverCard, Group, Center, Button, Divider, Text } from "@mantine/core";
 import cartData from "../../../db.json";
 import { MemoizedProductCard } from "../ProductCard";
 
 const ProductInCart = ({ children }) => {
+  const prices = cartData.cart.map((val) => {
+    return val.price;
+  });
+  const totalPrice =
+    cartData.cart.length !== 0
+      ? prices.reduce((acc, current) => acc + current)
+      : "";
+  console.log(totalPrice);
   if (cartData.cart?.length > 3) {
     return (
       <>
@@ -22,6 +30,7 @@ const ProductInCart = ({ children }) => {
               ))}
               <Divider my="md" size="xs" />
               <Center>
+                
                 <Button
                   variant="outline"
                   color="teal"
@@ -30,6 +39,9 @@ const ProductInCart = ({ children }) => {
                   see cart
                 </Button>
               </Center>
+              <Divider my="md" size="xs" />
+              <Text>Total:</Text>
+              <Text fw={500}>{totalPrice}$</Text>
             </HoverCard.Dropdown>
           </HoverCard>
         </Group>
@@ -54,7 +66,18 @@ const ProductInCart = ({ children }) => {
                 ))}
               </>
             ) : (
-              <p>cart is empty</p>
+              <Center>
+                <Text fw={600}>cart is empty 🎈</Text>
+              </Center>
+            )}
+            {cartData.cart.length !== 0 ? (
+              <>
+                <Divider my="md" size="xs" />
+                <Text>Total:</Text>
+                <Text fw={500}>{totalPrice}$</Text>
+              </>
+            ) : (
+              ""
             )}
           </HoverCard.Dropdown>
         </HoverCard>
