@@ -66,7 +66,25 @@ const ProductProvider = ({ children }) => {
 
   //delete a product from cart
   const deleteProductMutation = useMutation(deleteProductFromCart, {
-    onSuccess: () => client.invalidateQueries("products"),
+    onSuccess: () => {
+      updateNotification({
+        id: "load-data",
+        title: "Success ✅",
+        message: "Product deleted from cart 🥳.",
+        styles: (theme) => ({
+          root: {
+            "&::before": { backgroundColor: theme.colors.teal },
+          },
+          title: { color: theme.white, fontSize: 17 },
+          description: { color: "#999", fontSize: 15 },
+          closeButton: {
+            color: theme.white,
+            "&:hover": { backgroundColor: "rgba(0,0,0,.2)" },
+          },
+        }),
+      });
+      client.invalidateQueries("products")
+    },
     onMutate: () => {
       showNotification({
         id: "load-data",
@@ -81,7 +99,7 @@ const ProductProvider = ({ children }) => {
       updateNotification({
         id: "load-data",
         title: "Failed ❌",
-        message: "Could not add product to cart 😣.",
+        message: "Could not delete product from cart 😣.",
         styles: (theme) => ({
           root: {
             "&::before": { backgroundColor: theme.colors.red },
