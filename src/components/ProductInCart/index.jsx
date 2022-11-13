@@ -2,6 +2,7 @@ import React from "react";
 import { HoverCard, Group, Center, Button, Divider, Text } from "@mantine/core";
 import cartData from "../../../db.json";
 import { MemoizedProductCard } from "../ProductCard";
+import { useNavigate } from "react-router-dom";
 
 const ProductInCart = ({ children }) => {
   const prices = cartData.cart.map((val) => {
@@ -11,7 +12,7 @@ const ProductInCart = ({ children }) => {
     cartData.cart.length !== 0
       ? prices.reduce((acc, current) => acc + current)
       : "";
-  console.log(totalPrice);
+  const navigate = useNavigate()
   if (cartData.cart?.length > 3) {
     return (
       <>
@@ -35,6 +36,7 @@ const ProductInCart = ({ children }) => {
                   variant="outline"
                   color="teal"
                   style={{ width: "100%" }}
+                  onClick={()=>navigate("/checkout")}
                 >
                   see cart
                 </Button>
