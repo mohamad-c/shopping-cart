@@ -5,8 +5,10 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 import "./style.css";
 import cartItems from "../../../db.json";
 import ProductInCart from "../ProductInCart";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   return (
     <>
       <Header height={56} mb={120} className="navbar_header">
@@ -14,12 +16,13 @@ const Navbar = () => {
           <Group className="links" spacing={5}>
             {/* map links here */}
           </Group>
-
-          <FaReact color="#61dbfb" size={28} />
+          <ActionIcon size="lg" onClick={() => navigate("/")}>
+            <FaReact color="#61dbfb" size={28} />
+          </ActionIcon>
 
           <Group spacing={0} className="cart" position="right" noWrap>
             <ProductInCart>
-              <ActionIcon size="lg">
+              <ActionIcon size="lg" onClick={() => navigate("/checkout")}>
                 <Indicator
                   size={18}
                   label={String(cartItems.cart.length)}

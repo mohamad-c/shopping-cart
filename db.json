@@ -83,11 +83,11 @@
       "id": 1
     },
     {
-      "title": "Leather Sofa",
-      "price": 539.99,
-      "shipping": "100$ for shipping",
-      "brand": "liddy",
-      "image": "https://images.unsplash.com/photo-1540574163026-643ea20ade25?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzNzUxOTl8MHwxfGFsbHx8fHx8fHx8fDE2Njc3NTgzOTY&ixlib=rb-4.0.3&q=80",
+      "title": "Unique Lamp",
+      "price": 159.99,
+      "shipping": "free shipping",
+      "brand": "marcos",
+      "image": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzNzUxOTl8MHwxfGFsbHx8fHx8fHx8fDE2Njc3NTg0MjE&ixlib=rb-4.0.3&q=80",
       "id": 2
     }
   ]
