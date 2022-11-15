@@ -43,7 +43,7 @@ const ProductInCart = ({ children }) => {
               </Center>
               <Divider my="md" size="xs" />
               <Text>Total:</Text>
-              <Text fw={500}>{totalPrice}$</Text>
+              <Text fw={500}>{totalPrice.toFixed(2)}$</Text>
             </HoverCard.Dropdown>
           </HoverCard>
         </Group>
